@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 16 - Forms</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form id="main" action="index.html">
+      <fieldset class="registration">
+        <legend>Registration</legend>
+
+        <label for="username">Username</label>
+        <input type="text" required id="username" name="fullname" placeholder="Enter your fullname">
+
+        <label for="status">Status</label>
+        <select class="select-status" name="status">
+          <option value="student">Student</option>
+          <option value="professional">Professional</option>
+        </select>
+
+        <label for="email">E-mail</label>
+        <input type="email" required id="email" name="email" placeholder="Enter your professional address"><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" required id="phone" name="phone" placeholder="514-123-5577">
+
+        <label for="website">Website</label>
+        <input type="url" required id="website" name="website" placeholder="http://">
+
+        <label for="about">About</label>
+        <textarea name="about" required id="about"></textarea>
+
+        <label for="city">Cities you visited</label>
+        <select class="city" name="city" multiple>
+          <option value="london">London</option>
+          <option value="montreal" selected>Montreal</option>
+          <option value="newyork">New York</option>
+          <option value="paris">Paris</option>
+        </select>
+
+        <label for="password">Password</label>
+        <input type="password" required id="password" name="password" placeholder="*********">
+
+        <label for="password">Confirm Password</label>
+        <input type="password" required id="password" name="password" placeholder="*********">
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+      </fieldset>
+
+      <fieldset id="search-the-sites">
+        <legend>Search the Site</legend>
+        <input type="search" name="searchsite">
+        <button type="submit" name="button">Search</button>
+      </fieldset>
+
+      <fieldset id="options">
+        <legend>Options</legend>
+        <label for="flavors">Choose a flavor: </label>
+        <input list="flavors" id="flavors" name="flavors"><br>
+      </fieldset>
+
+      <fieldset id="sex">
+        <legend>Sex</legend>
+        <input type="radio" name="sex" value="male" checked> Male<br>
+        <input type="radio" name="sex" value="female"> Female<br>
+      </fieldset>
+
+      <fieldset id="languages">
+        <legend>Languages</legend>
+        <input type="checkbox" name="french" value="french"> I speak french<br>
+        <input type="checkbox" name="english" value="english"> I speak english<br>
+        <input type="checkbox" name="spanish" value="spanish"> I speak spanish<br>
+      </fieldset>
+
+      <fieldset id="photo">
+        <legend>Photo</legend>
+        File: <input type="text" name="file" value=""><br>
+        <input type="image" src="http://bmlabca.com/uxwid/form/images/upload.png" width="200">
+      </fieldset>
+    </form>
+  </body>
+</html>
